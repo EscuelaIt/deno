@@ -4,7 +4,7 @@
       {
         "name": "typescript-deno-plugin",
         "enable": true,
-        "importmap": "import-map.json"
+        "importmap": "import_map.json"
       }
     ]
   }
