@@ -1,3 +1,3 @@
 # Randomizer
 
-Create a local server that upon a request, returns number between 0 and 10 (inclusive).
+Create a local server that upon a request, returns number between a start number and an end number specified as query params.
