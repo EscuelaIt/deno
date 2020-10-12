@@ -1,5 +1,5 @@
 import { Flipper } from "./flipper.ts";
-import {assertEquals} from "../deps.ts";
+import { assertEquals } from "../deps.ts";
 
 Deno.test("should flip a word whose length is even", () => {
   const flipper = new Flipper();

@@ -18,7 +18,7 @@ Nuxt
 Next
 Node
 Deno
-`
+`;
 const flipper = new Flipper();
 const flippedFrameworks = flipper.flip(frameworks);
-console.log(flippedFrameworks)
+console.log(flippedFrameworks);
