@@ -16,5 +16,5 @@ const outputFile = "./transformed-people.json";
 await ensureFile(outputFile);
 await Deno.writeTextFile(
   outputFile,
-  JSON.stringify({ people: transformedPeople })
+  JSON.stringify({ people: transformedPeople }),
 );
