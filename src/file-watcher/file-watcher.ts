@@ -7,8 +7,9 @@ const modifiedFiles: string[] = [];
 for await (const event of watcher) {
   if (event.kind === "create") {
     const markdownFiles = event.paths.filter((path) => path.endsWith(".md"));
+
     markdownFiles.forEach(async (markdownFile) => {
-      if (modifiedFiles.includes(markdownFile) && markdownFiles.length !== 0) {
+      if (modifiedFiles.includes(markdownFile)) {
         return;
       }
 
