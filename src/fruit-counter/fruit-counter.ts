@@ -1,14 +1,13 @@
 export function count(elements: string[]) {
-  return elements.reduce(
-    (accumulator: Record<string, number>, currentValue) => {
-      if (accumulator[currentValue] === undefined) {
-        accumulator[currentValue] = 1;
-      } else {
-        accumulator[currentValue]++;
-      }
+  const countedElements: Record<string, number> = {};
 
-      return accumulator;
-    },
-    {}
-  );
+  for (const item of elements) {
+    if (countedElements[item] === undefined) {
+      countedElements[item] = 1;
+    } else {
+      countedElements[item]++;
+    }
+  }
+
+  return countedElements;
 }
