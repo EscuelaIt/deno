@@ -7,15 +7,14 @@ interface People {
 const stringifiedPeople = await Deno.readTextFile("./people.json");
 
 const people: People = JSON.parse(stringifiedPeople);
-
-const transformedPeople = people.people.map((person) => ({
-  name: person.name,
-  birthday: new Date(new Date().getFullYear() - person.age, 0),
+const transformedPeople = people.people.map(({ age, name }) => ({
+  name,
+  birthday: new Date(new Date().getFullYear() - age, 0),
 }));
 
-await ensureFile("transformed-people.json");
-
+const outputFile = "./transformed-people.json";
+await ensureFile(outputFile);
 await Deno.writeTextFile(
-  "transformed-people.json",
+  outputFile,
   JSON.stringify({ people: transformedPeople })
 );

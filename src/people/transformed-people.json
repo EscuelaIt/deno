@@ -1,0 +1,9 @@
+{
+  "people": [
+    { "name": "Juan", "birthday": "1996-12-31T23:00:00.000Z" },
+    { "name": "Sara", "birthday": "1989-12-31T23:00:00.000Z" },
+    { "name": "Alberto", "birthday": "1976-12-31T23:00:00.000Z" },
+    { "name": "Beatriz", "birthday": "1987-12-31T23:00:00.000Z" },
+    { "name": "Raquel", "birthday": "1979-12-31T23:00:00.000Z" }
+  ]
+}
