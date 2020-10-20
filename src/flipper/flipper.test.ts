@@ -16,3 +16,11 @@ Deno.test("should flip a word which length is odd", () => {
 
   assertEquals(actual, ["llohe"]);
 });
+
+Deno.test("should flip a word capitalizing correctly", () => {
+  const flipper = new Flipper();
+
+  const actual = flipper.flip(["Hello"]);
+
+  assertEquals(actual, ["Llohe"]);
+});
