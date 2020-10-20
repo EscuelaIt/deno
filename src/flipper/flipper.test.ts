@@ -8,3 +8,11 @@ Deno.test("should flip a word which length is even", () => {
 
   assertEquals(actual, ["laho"]);
 });
+
+Deno.test("should flip a word which length is odd", () => {
+  const flipper = new Flipper();
+
+  const actual = flipper.flip(["hello"]);
+
+  assertEquals(actual, ["llohe"]);
+});
